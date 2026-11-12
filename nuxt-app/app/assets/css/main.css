@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/*
+  Design tokens. Every color, font and radius of the app lives here.
+  Tailwind turns each --color-xxx into classes like bg-xxx, text-xxx, border-xxx.
+  See DESIGN.md for when to use which one.
+*/
+@theme {
+  /* Brand */
+  --color-primary: #01699f;
+  --color-primary-dark: #014f78;
+
+  /* Text */
+  --color-ink: #0b0d45;
+  --color-muted: #6b7a89;
+
+  /* Surfaces */
+  --color-page: #c9dff4;
+  --color-page-light: #e0edf8;
+  --color-surface: #fcfcfc;
+  --color-line: #dadde1;
+
+  /* Fonts */
+  --font-sans: "Public Sans", sans-serif;
+  --font-logo: "Barlow Condensed", sans-serif;
+
+  /* Corner radius */
+  --radius-card: 1rem;
+  --radius-tile: 0.875rem;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background-color: var(--color-page);
+}
